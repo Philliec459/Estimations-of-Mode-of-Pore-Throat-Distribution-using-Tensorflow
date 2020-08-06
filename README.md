@@ -5,6 +5,10 @@ Tensorflow used to Estimate the Mode (microns) of the Pore Throat Distribution f
 #### Predict Mode of Pore Throats
 The objective of this project is to estimate the Mode of the Pore Throat Distribution which would then let us segregate the rock into Macro, Meso and Micro Rock Types (RTs). In this repository we are using Tensorflow  to predict Mode. 
 
+The exact Mode of the PTD (microns) is calculated using Clerke's Thomeer Capillary Pressure parameters and the following Buiting equation:
+
+        mode (microns) = exp(-1.15*G1)/(214/Pd1)
+
 The Arab D data set published by Clerke is quite distinctive. Clerke acquired nearly 450 High Pressure Mercury Injection Capillary Pressure (HPMI) measurements in the Arab D reservoir; however, Clerke's final samples were randomly selected from 1,000's of pre-qualified core samples ensuring a broad distribution and representation of all Petrophysical properties. This created one of the best Core Analysis datasets every collected in our industry. 
 
 Clerke began evaluating this dataset by fitting a Thomeer hyperbolas for each pore system in each sample to generate the published Thomeer Capillary Pressure parameters. From these data Clerke established his Petrophysical Rock Types (PRT) based on the Initial Displacement Pressures for each pore system and the number of pore systems present in each sample. From the figure below it is rather evident that Clerke's PRTs are Petrophysically well-defined in poro-perm space where each color represents a different PRT.  The Capillary Pressure curves and Pore Throat Distributions (PTD) shown on the right hand side of the figure illustrate the unique characteristics of each PRT. 
@@ -50,7 +54,8 @@ In the second run we use all the data for Mode predictions (pred) at each sample
 
         saver.restore(sess,'yahoo_dataset.ckpt')
 
-
+## Results:
+![TS_Image](results.png)
 
 
 1 Clerke, E. A., Mueller III, H. W., Phillips, E. C., Eyvazzadeh, R. Y., Jones, D. H., Ramamoorthy, R., Srivastava, A., (2008) “Application of Thomeer Hyperbolas to decode the pore systems, facies and reservoir properties of the Upper Jurassic Arab D Limestone, Ghawar field, Saudi Arabia: A Rosetta Stone approach”, GeoArabia, Vol. 13, No. 4, p. 113-160, October, 2008. 
