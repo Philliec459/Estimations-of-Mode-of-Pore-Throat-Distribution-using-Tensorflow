@@ -3,6 +3,7 @@ Utilized Tensorflow to estimate the Mode of a Pore Throat Distribution based on 
 Tensorflow used to Estimate the Mode (microns) of the Pore Throat Distribution from porosity and permeability data calibrated to Clerke's Rosetta Stone Arab D Carbonate dataset.
 
 --
+
 **There have been some recent changes to the Jupyter Notebook to reflect the new numpy, pandas and sklearn. Also, we are using the sklearn normalize on our log10 of perm and mode  We also show a more straight-forward technique where you take the log of perm and mode and then and normalize all the data using standard min-max techinques and then de-normalize the same way. Frankly, I like showing our work so that we are not dependant upon sklearn.**
 
 ### Introduction
