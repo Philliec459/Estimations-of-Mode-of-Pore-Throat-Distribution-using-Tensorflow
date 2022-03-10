@@ -1,6 +1,10 @@
 # Estimations-of-Mode-of-Pore-Throat-Distribution-using-Tensorflow
 Utilized Tensorflow to estimate the Mode of a Pore Throat Distribution based on Carbonate Core Data
 Tensorflow used to Estimate the Mode (microns) of the Pore Throat Distribution from porosity and permeability data calibrated to Clerke's Rosetta Stone Arab D Carbonate dataset.
+
+--
+# There have been some recent changes to the Jupyter Notebook to reflect the new numpy, pandas and sklearn. Also, we are using the sklearn normalize on our log10 of perm and mode, but we do show a more straight-forward technique where you take the log of perm and mode and then and normalize all the data using standard min-max techinques and then de-normalize the same way, but for this repository we are using the traditional sklearn. Frankly, I like showing our work so that we are not dependant upon sklearn.
+
 ### Introduction
 #### Predict Mode of Pore Throats
 The objective of this project is to estimate the Mode of the Pore Throat Distribution which would then let us segregate the rock into Macro, Meso and Micro Rock Types (RTs). In this repository we are using Tensorflow  to predict Mode. 
@@ -45,17 +49,9 @@ We initally make the first training run (Run 1) using 20% of the data for testin
                 saver.save(sess,'yahoo_dataset.ckpt')
                 print('Model Saved') 
 
-Run 2:
-In the second run we use all the data for Mode predictions (pred) at each sample level in our dataset. We use 0 Epochs and restore the training weights per the code below.
-
-        #2nd run - now define zone of interest and use checkpoints from training before
-        df_train = df[:328]   
-        df_test = df[0:]       
-
-        saver.restore(sess,'yahoo_dataset.ckpt')
-
+ 
 ## Results:
 ![TS_Image](results.png)
 
 
-1 Clerke, E. A., Mueller III, H. W., Phillips, E. C., Eyvazzadeh, R. Y., Jones, D. H., Ramamoorthy, R., Srivastava, A., (2008) “Application of Thomeer Hyperbolas to decode the pore systems, facies and reservoir properties of the Upper Jurassic Arab D Limestone, Ghawar field, Saudi Arabia: A Rosetta Stone approach”, GeoArabia, Vol. 13, No. 4, p. 113-160, October, 2008. 
+1 Clerke, E. A., Mueller III, H. W., Phillips, E. C., Eyvazzadeh, R. Y., Jones, D. H., Ramamoorthy, R., Srivastava, A., (2008) “Application of Thomeer Hyperbolas to decode the pore systems, facies and reservoir properties of the Upper Jurassic Arab D Limestone, Ghawar field, Saudi Arabia: A Rosetta Stone approach”, GeoArabia, Vol. 13, No. 4, p. 113-160, October 2008. 
