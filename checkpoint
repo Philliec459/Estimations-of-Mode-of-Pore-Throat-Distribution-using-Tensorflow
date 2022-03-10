@@ -1,2 +1,0 @@
-model_checkpoint_path: "yahoo_dataset.ckpt"
-all_model_checkpoint_paths: "yahoo_dataset.ckpt"
