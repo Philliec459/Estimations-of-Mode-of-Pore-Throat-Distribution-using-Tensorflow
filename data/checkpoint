@@ -1,2 +1,0 @@
-model_checkpoint_path: "rosettastone_dataset.ckpt"
-all_model_checkpoint_paths: "rosettastone_dataset.ckpt"
