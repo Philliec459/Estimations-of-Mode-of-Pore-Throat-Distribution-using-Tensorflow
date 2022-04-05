@@ -17,11 +17,11 @@ The Arab D data set published by Clerke is quite distinctive. Clerke acquired ne
 
 Clerke began evaluating this dataset by fitting a Thomeer hyperbolas for each pore system in each sample to generate the published Thomeer Capillary Pressure parameters. From these data Clerke established his Petrophysical Rock Types (PRT) based on the Initial Displacement Pressures for each pore system and the number of pore systems present in each sample. From the figure below it is rather evident that Clerke's PRTs are Petrophysically well-defined in poro-perm space where each color represents a different PRT.  The Capillary Pressure curves and Pore Throat Distributions (PTD) shown on the right hand side of the figure illustrate the unique characteristics of each PRT. 
 
-![TS_Image](PRT.png)
+>![TS_Image](PRT.png)
 
 ###### The characterization of Clerke's PRTs are shown below:
 
-![TS_Image](Rock-Types.png)
+>![TS_Image](Rock-Types.png)
 
 As can be seen in the first figure above, the PRTs are rather well segregated in the Porosity vs. Permeability Cross Plot as they fall in distinct regions or clusters on the Cross Plot.For modeling purposes it is important to take advantage of the excellent correlations between the PRTs. 
 
@@ -51,7 +51,7 @@ We initally make the first training run (Run 1) using 20% of the data for testin
 
  
 ## Results:
-![TS_Image](results.png)
+>![TS_Image](results.png)
 
 
 1 Clerke, E. A., Mueller III, H. W., Phillips, E. C., Eyvazzadeh, R. Y., Jones, D. H., Ramamoorthy, R., Srivastava, A., (2008) “Application of Thomeer Hyperbolas to decode the pore systems, facies and reservoir properties of the Upper Jurassic Arab D Limestone, Ghawar field, Saudi Arabia: A Rosetta Stone approach”, GeoArabia, Vol. 13, No. 4, p. 113-160, October 2008. 
